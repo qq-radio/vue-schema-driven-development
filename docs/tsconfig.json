@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "paths": {
+      "@mocks/*": ["./mocks/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "vueCompilerOptions": {
+    "target": 3
+  },
+  "include": ["**/*", ".vitepress/**/*", "../types", "**/*.vue", "**/*.ts", "shims-vue.d.ts"],
+  "exclude": ["node_modules"]
+}

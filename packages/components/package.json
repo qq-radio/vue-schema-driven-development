@@ -1,0 +1,8 @@
+{
+  "name": "@center/components",
+  "version": "1.0.0",
+  "description": "all components are settled here",
+  "private": true,
+  "main": "index.ts",
+  "sideEffects": false
+}

@@ -1,0 +1,38 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(form) {
+}
+
+@include b(form-item) {
+  @include e(title) {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebeef5;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+
+  @include e(title-text) {
+    margin-bottom: 12px;
+    margin-left: 32px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  @include e(label) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.el-icon {
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+:deep(.el-row) {
+  &:last-child {
+    float: right;
+    margin-bottom: 20px;
+  }
+}

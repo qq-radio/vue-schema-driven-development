@@ -1,0 +1,11 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(button-group) {
+  display: inline-block;
+
+  @include e(content) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,13 @@
+.vite-ssg-temp
+
+node_modules
+.DS_Store
+
+dist
+dist-ssr
+
+*.log
+
+
+docs/.vitepress/cache
+docs/.vitepress/dist

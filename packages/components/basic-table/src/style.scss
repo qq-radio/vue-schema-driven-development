@@ -1,0 +1,44 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(table) {
+  @include e(search) {
+    .el-button {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include e(body) {
+    .el-link {
+      margin-right: 10px;
+    }
+  }
+
+  @include e(page) {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    .el-input__inner {
+      width: 20px;
+    }
+  }
+}
+
+.custom-header {
+  font-weight: bold;
+  color: #000;
+  background-color: #fafafa !important;
+}
+
+.operations {
+  height: 46px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.el-radio__label {
+  padding: 0px;
+}

@@ -1,0 +1,36 @@
+// color
+$color-primary: #409eff;
+$color-success: #67c23a;
+$color-info: #909399;
+$color-warning: #e6a23c;
+$color-danger: #f56c6c;
+
+// bem
+
+@mixin b($name) {
+  $namespace: 'basic-';
+
+  .#{$namespace}#{$name} {
+    @content;
+  }
+}
+
+@mixin e($name) {
+  $element-separator: '__';
+
+  @at-root {
+    &#{$element-separator}#{$name} {
+      @content;
+    }
+  }
+}
+
+@mixin m($name) {
+  $modifier-separator: '--';
+
+  @at-root {
+    &#{$modifier-separator}#{$name} {
+      @content;
+    }
+  }
+}

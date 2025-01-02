@@ -1,0 +1,8 @@
+{
+  "name": "@center/composables",
+  "version": "1.0.0",
+  "description": "all composables are settled here",
+  "private": true,
+  "main": "index.ts",
+  "sideEffects": false
+}

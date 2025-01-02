@@ -1,0 +1,38 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "author": "qq-radio",
+  "license": "ISC",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs preview",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue,.json",
+    "eslint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.vue,.json --fix",
+    "typecheck": "vue-tsc -p tsconfig.json --noEmit",
+    "typecheck:docs": "vue-tsc -p docs/tsconfig.json --noEmit",
+    "prettier": "prettier ./**/*.{js,ts,jsx,tsx,vue,scss,css,json,md} --write"
+  },
+  "dependencies": {
+    "@center/components": "workspace:*",
+    "@center/composables": "workspace:*",
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "2.3.5",
+    "lodash-es": "^4.17.21",
+    "vue": "3.3.0"
+  },
+  "devDependencies": {
+    "@center/eslint-config": "workspace:*",
+    "@types/node": "*",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^4.0.1",
+    "lodash": "^4.17.21",
+    "prettier": "^3.3.3",
+    "sass": "^1.83.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.2.5",
+    "vue-tsc": "^2.0.7"
+  }
+}

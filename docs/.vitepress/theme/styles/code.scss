@@ -1,0 +1,101 @@
+@use 'highlight.js/styles/color-brewer.css';
+
+.main {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    padding: 0;
+    margin: 30px 0 10px 0;
+  }
+
+  .github-light {
+    [class*='language-'] pre {
+      padding: 0 10px;
+
+      box-sizing: border-box;
+      overflow: auto hidden;
+    }
+  }
+
+  .docs-example-language-vue {
+    &.language-vue {
+      margin: 0;
+      border-radius: 0;
+      overflow-y: hidden;
+      padding-top: 10px;
+
+      pre {
+        font-family: monospace, monospace;
+        font-size: 1em;
+        overflow: unset;
+        line-height: 1.4;
+        padding: 0;
+      }
+
+      code {
+        padding: 0 10px 20px;
+        line-height: 1.4;
+        font-size: 14px;
+        color: var(--el-text-color-primary);
+        background-color: var(--vp-code-block-bg);
+      }
+
+      .hljs-keyword {
+        color: #c792ea;
+      }
+      .hljs-attr,
+      .hljs-tag {
+        color: #717c11;
+      }
+
+      .hljs-number,
+      .hljs-literal {
+        color: #c25205;
+      }
+      .hljs-string {
+        color: #0b8235;
+      }
+      .hljs-variable {
+        color: var(--el-text-color-primary);
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0bfbf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e7e7e;
+}

@@ -1,0 +1,17 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(image) {
+  position: relative;
+  display: inline-block;
+
+  @include e(total) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 1px 0;
+  }
+}

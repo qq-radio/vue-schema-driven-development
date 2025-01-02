@@ -1,0 +1,57 @@
+{
+  /** 开启预览模式下，打开文件不会关闭当前 */
+  "workbench.editor.enablePreview": false,
+
+  /** 保存时自动格式化 */
+  "editor.formatOnSave": true,
+
+  /** 使用prettier格式化以下文件 */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /** 开启eslint报错提示和eslint自动修复 */
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+
+  /** 禁用文件重命名后，扫描整个项目，从而避免卡顿（关闭后无法自动重构路径，需要手动检查） */
+  "files.participants.timeout": 0,
+
+  /** turbo快速打印 */
+  "turboConsoleLog.delimiterInsideMessage": "",
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.logMessagePrefix": "",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+
+  /** 文件嵌套展示 */
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": [],
+    "tsconfig.json": "tsconfig.*.json"
+  }
+}

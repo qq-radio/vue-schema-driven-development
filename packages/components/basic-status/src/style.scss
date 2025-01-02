@@ -1,0 +1,41 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(status) {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include e(circle) {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+
+    @include m(primary) {
+      background-color: #409eff;
+    }
+
+    @include m(success) {
+      background-color: #67c23a;
+    }
+
+    @include m(info) {
+      background-color: #909399;
+    }
+
+    @include m(warning) {
+      background-color: #e6a23c;
+    }
+
+    @include m(danger) {
+      background-color: #f56c6c;
+    }
+  }
+
+  @include e(text) {
+    margin-left: 4px;
+    vertical-align: middle;
+  }
+}

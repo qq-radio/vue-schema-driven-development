@@ -1,0 +1,35 @@
+@use '../../../theme/index.scss' as *;
+
+@include b(input-number-range) {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  color: #606266;
+
+  @include e(prefix) {
+    padding: 0 10px;
+  }
+
+  @include e(start) {
+    width: 46%;
+  }
+
+  @include e(end) {
+    width: 46%;
+  }
+
+  @include e(range-separator) {
+    padding: 0 14px;
+  }
+
+  @include e(suffix) {
+    padding: 0 10px;
+  }
+
+  :deep(.el-input__wrapper) {
+    box-shadow: none !important;
+  }
+}
