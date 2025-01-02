@@ -117,7 +117,7 @@ export default defineConfig({
       //   link: '/components/template',
       // },
     ],
-    socialLinks: [{ icon: 'github', link: 'https://github.com/qq-radio/monorepo' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/qq-radio/vue-schema-driven-development' }],
   },
   markdown: {
     lineNumbers: true,
